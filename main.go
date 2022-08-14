@@ -147,8 +147,8 @@ func updateAccount(args []string) {
 }
 
 func handleAccountRequest(args []string) {
-	var accountType = args[1]
-	var key = args[2]
+	var accountType = args[0]
+	var key = args[1]
 	var allAccounts = getAllAccounts()
 	var account, accountErr = Acc.FindAccount(allAccounts, accountType)
 

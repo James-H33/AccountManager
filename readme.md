@@ -5,9 +5,6 @@ Create Executable
 go build -o AccountManager
 ```
 
-Add Acount
-
-
 Create Symbolic Link - Mac OS
 ```
 ln -s /path/to/{ExecutableName} /path/to/bin
@@ -23,7 +20,7 @@ pbcopy < `AccountManager microsoft password`
 ## Data Stored
 Data for this application is stored in `/user/{Username}/.AccountManager`
 
-Data Structure:
+Accounts Data Structure:
 ```json
 {
     "type":  "account-name",
